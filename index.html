@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple calculator online.">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calc Online</title>
+</head>
+<body>
+    <div role="main" class="content">
+        <!--Calculator screen-->
+        <div class="calc-screen">
+            <!--Calculation-->
+            <p class="calculation" id="calculation"></p>
+
+            <!--Input field-->
+            <p class="input" id="input"></p>
+        </div>
+
+        <!--Contains all buttons-->
+        <div class="button-area">
+            <div class="button-2" style="font-size: 15px;" onclick="resetFull()">C</div>
+            <div class="button-2" style="font-size: 15px;" onclick="reset()">CE</div>
+            <div class="button-2" style="font-size: 15px;" onclick="remove()">⌫</div>
+            <div class="button-2" onclick="buttonOperator('÷')">÷</div>
+
+            <div class="button-3" style="font-weight: bold" onclick="buttonNumber(7)">7</div>
+            <div class="button-3" style="font-weight: bold" onclick="buttonNumber(8)">8</div>
+            <div class="button-3" style="font-weight: bold" onclick="buttonNumber(9)">9</div>
+            <div class="button-2" onclick="buttonOperator('×')">×</div>
+
+            <div class="button-3" style="font-weight: bold" onclick="buttonNumber(4)">4</div>
+            <div class="button-3" style="font-weight: bold" onclick="buttonNumber(5)">5</div>
+            <div class="button-3" style="font-weight: bold" onclick="buttonNumber(6)">6</div>
+            <div class="button-2" onclick="buttonOperator('−')">−</div>
+
+            <div class="button-3" style="font-weight: bold" onclick="buttonNumber(1)">1</div>
+            <div class="button-3" style="font-weight: bold" onclick="buttonNumber(2)">2</div>
+            <div class="button-3" style="font-weight: bold" onclick="buttonNumber(3)">3</div>
+            <div class="button-2" onclick="buttonOperator('+')">+</div>
+
+            <div class="button-4" style="font-weight: bold" onclick="buttonNumber(0)">0</div>
+            <div class="button-3" style="font-weight: bold" onclick="buttonNumber(',')">,</div>
+            <div class="button-1" onclick="buttonEquals()">=</div>
+        </div>
+    </div>
+</body>
+</html>
